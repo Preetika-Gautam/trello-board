@@ -1,0 +1,60 @@
+.lane {
+  background: #f4f4f4;
+  padding: 16px;
+  border-radius: 12px;
+  min-width: 300px;
+  max-height: 80vh;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.cards {
+  min-height: 100px;
+  background-color: #f0f0f0;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.cards {
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.newTodo {
+  display: flex;
+  gap: 8px;
+
+  input {
+    flex: 1;
+    padding: 6px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
